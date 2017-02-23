@@ -57,3 +57,6 @@ gem 'thor', '0.19.1'
 
 # Add dotenv to set environment variables
 gem 'dotenv-rails', :groups => [:development, :test]
+
+# Add readline resolve bug (https://github.com/rails/rails/issues/26658)
+gem 'rb-readline'
