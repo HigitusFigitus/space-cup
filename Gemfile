@@ -51,3 +51,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Downgrade thor to resolve bug (https://github.com/erikhuda/thor/issues/538)
+gem 'thor', '0.19.1'
