@@ -1,2 +1,9 @@
-<h1>Apod#index</h1>
-<p>Find me in app/views/apod/index.html.erb</p>
+<h1><%= @apod_info["title"] %></h1>
+
+<% if @media_type_is_video %>
+  <iframe src="<%=@apod_info["url"] %>"></iframe>
+<% else %>
+  <img src="<%= @apod_info["url"] %>" alt="<%= @apod_info["title"] %>" />
+<% end %>
+<p><%= @apod_info["explanation"] %></p>
+<p><%= @apod_info["date"] %></p>
