@@ -1,6 +1,6 @@
 <h1><%= @apod_info["title"] %></h1>
 
-<% if @media_type_is_video %>
+<% if @media_is_video %>
   <iframe src="<%=@apod_info["url"] %>"></iframe>
 <% else %>
   <img src="<%= @apod_info["url"] %>" alt="<%= @apod_info["title"] %>" />

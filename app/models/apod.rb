@@ -4,4 +4,8 @@ class Apod < ApplicationRecord
     response = Net::HTTP.get(URI(apod_url))
     JSON.parse(response)
   end
+
+  def self.is_video?
+    get_apod_info["media_type"].eql?("video")
+  end
 end
