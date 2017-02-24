@@ -1,24 +1,27 @@
-# README
+# space cup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> An app to get your daily cup of space with the NASA's Astronomy Picture Of The Day.
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
+- [Install](#install)
+- [Stack](#stack)
+- [License](#license)
 
-* System dependencies
+## Install
++ Clone or download this repo.
++ Move into repo directory.
++ Run `bundle install` in the terminal.
++ Add your API key (you can sign up for an API key on the [NASA API's website](https://api.nasa.gov/index.html#apply-for-an-api-key)).
+Note: Make sure to always hide your API keys with environment variables.
++ Run `Rails server` in the terminal.
++ Go to `localhost:3000`.
 
-* Configuration
+## Stack
++ Ruby on Rails 5
++ Materialize
++ NASA APIs
 
-* Database creation
+## License
+ISC
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
