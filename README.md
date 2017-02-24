@@ -14,7 +14,7 @@
 + Run `bundle install` in the terminal.
 + Add your API key (you can sign up for an API key on the [NASA API's website](https://api.nasa.gov/index.html#apply-for-an-api-key)).
 Note: Make sure to always hide your API keys with environment variables.
-+ Run `Rails server` in the terminal.
++ Run `rails server` in the terminal.
 + Go to `localhost:3000`.
 
 ## Stack
