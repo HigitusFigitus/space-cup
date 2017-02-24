@@ -2,14 +2,28 @@
 <html>
   <head>
     <title>NasaApod</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>space cup</li>
+          <li><i class="material-icons cup">free_breakfast</i></li>
+          <li>your daily cup of space</li>
+        </ul>
+      </div>
+    </nav>
+
+  <%= yield %>
+
   </body>
 </html>
+
+
+

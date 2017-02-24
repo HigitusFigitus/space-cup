@@ -1,9 +1,33 @@
-<h1><%= @apod_info["title"] %></h1>
-
 <% if @media_is_video %>
+
+<div class="container">
   <iframe src="<%=@apod_info["url"] %>"></iframe>
+  <h2 class="header"><%= @apod_info["title"] %></h2>
+  <p class="grey-text text-darken-3 lighten-3"><%= @apod_info["explanation"] %></p>
+  <p class="grey-text text-darken-3 lighten-3"><%= @apod_info["date"] %></p>
+</div>
+
 <% else %>
-  <img src="<%= @apod_info["url"] %>" alt="<%= @apod_info["title"] %>" />
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="<%= @apod_info["hdurl"] %>" alt="<%= @apod_info["title"] %>" />
+  </div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <h2 class="sub-header">NASA Astronomy Picture Of The Day | <%= @apod_info["date"] %></h2>
+    <h1 class="header"><%= @apod_info["title"] %></h1>
+    <p class="grey-text text-darken-3 lighten-3"><%= @apod_info["explanation"] %></p>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="<%= @apod_info["hdurl"] %>" alt="<%= @apod_info["title"] %>" />
+  </div>
+</div>
+
 <% end %>
-<p><%= @apod_info["explanation"] %></p>
-<p><%= @apod_info["date"] %></p>
+
