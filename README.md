@@ -1,6 +1,6 @@
-# space cup
+#Space Cup
 
-> An app to get your daily cup of space with the NASA's Astronomy Picture Of The Day.
+> Space Cup queries NASA's API and returns the daily Astronomy Picture Of The Day.
 
 ## Table of Contents
 
