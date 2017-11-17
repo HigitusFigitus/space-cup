@@ -1,6 +1,6 @@
 # Space Cup
 
-> Space Cup queries NASA's API and returns the daily Astronomy Picture Of The Day.
+> Space Cup queries NASA's API and returns the Astronomy Picture Of The Day.
 
 ## Table of Contents
 
